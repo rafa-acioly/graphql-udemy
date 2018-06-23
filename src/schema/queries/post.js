@@ -3,7 +3,7 @@ import { Post } from '../types/Post'
 import { fakeDatabase } from '../../FakeDatabase';
 
 export default {
-    author: {
+    post: {
         type: Post,
         description: 'Get a specific blog post.',
         args: {
