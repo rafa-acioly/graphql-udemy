@@ -6,7 +6,7 @@ import {
     GraphQLNonNull
 } from 'graphql';
 
-export const Comments = new GraphQLObjectType({
+export const Comment = new GraphQLObjectType({
     name: "Comment",
     description: "Details of a comment",
     fields: () => ({

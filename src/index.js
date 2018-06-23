@@ -1,2 +1,19 @@
 import { graphql } from 'graphql';
-console.log('oi');
+import schema from './schema/';
+
+const query = `
+    {
+        posts {
+            title,
+            author {
+                name
+            }
+        }
+    }
+`;
+
+graphql(schema, query).then(result => {
+    console.log(JSON.stringify(result, null, 2));
+}).catch(error => {
+    console.error(error);
+});
